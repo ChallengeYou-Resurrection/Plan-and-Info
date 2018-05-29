@@ -1,4 +1,4 @@
-# CYR-Plan
+# ChallengeYou Resurrection
 The plan for the ChallengeYou Resurrection 
 
 # Table of contents
