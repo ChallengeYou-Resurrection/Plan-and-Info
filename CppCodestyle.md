@@ -4,9 +4,9 @@ Please follow this code style when contributing to C++ projects
 
 
 1. [Naming Conventions](#naming)
-  1. [Files and Folders](#files)
-  2. [Variables and Constants](#variables)
-  3. [Misc](#misc)
+    1. [Files and Folders](#files)
+    2. [Variables and Constants](#variables)
+    3. [Misc](#misc)
 2. [Functions and Scopes](#functions)
 3. [Classes](#classes)
 4. [Includes](#includes)
