@@ -12,6 +12,8 @@ Please follow this code style when contributing to C++ projects
 4. [Includes](#includes)
 5. [Constants](#constants)
 6. [Pointers](#pointers)
+    1. [Non-Owning](#ptr-nonown)
+    2. [Owning](ptr-own)
 
 ## Naming Conventions <div id = "naming">
 ### Files and Folders<div id = "files">
@@ -114,3 +116,24 @@ For example:
 #include <SFML/Graphics.hpp>
 
 #include "Foo.h"
+```
+
+## Constants <div id = "constants">
+* Do not use C-Style "defines" for constants.
+* Use constexpr, it is compile-time determined just like #define is
+* Functions can be marked as "constexpr" as well. 
+    
+## Pointers <div id = "pointers">
+### Non-Owning <div id = "ptr-nonown>
+Try to avoid using pointers as they are often completely unnecessary, as in a reference is usually appropriate instead. However, they are often fine as class members.
+    
+### Owning <div id = "ptr-own>
+For owning pointers, always use smart pointers (`std::unique_ptr` or `std::shared_ptr` depending on the need) and never raw pointers.
+    
+```
+int* x = new int(5); //No
+auto y = std::make_unique<int>(5) //Yes
+```
+
+If the `new` keyword is seen in your code, your PR will be rejected no questions asked.
+
