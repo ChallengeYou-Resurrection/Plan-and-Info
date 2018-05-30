@@ -89,10 +89,28 @@ class Foo
 * Public functions and members at top, protected in middle, private at bottom
 * Notice a space between the final class member/function and the next accessor
 
-For initiilzation lists, use a new line like so
+For initilzation lists, use a new line like so
 
 ```C++
 Foo::Foo(int x, int y)
 :   m_x (x)
 ,   m_y (y) { }
 ```
+
+## Includes <div id = "includes">
+The order in which files should be included is the following:
+    
+    1. Standard ibrary includes
+    2. Third-party libraries
+    3. Other
+    4. Forward declarations
+    
+For example:
+
+```C++
+#include <vector>
+#include <unordered_map>
+
+#include <SFML/Graphics.hpp>
+
+#include "Foo.h"
