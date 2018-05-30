@@ -34,3 +34,27 @@ Please follow this code style when contributing to C++ projects
 |----------------|--------------------------------------------|
 | Function names | `camelCase(int camelCase, int camelAgain)` |
 | Class names    | `PascalCase`                               |
+    
+## Functions and Scopes <div id = #functions">
+* Pass primitives by either reference or value
+* Pass object types (>8 bytes) by reference or const reference 
+The indentation style for scopes can be seen here:
+```C++
+//New line bracket for functions
+bool functionName(int arg1, const std::string& arg2)
+{
+    //Same line bracket for block statements
+    if (arg1 > 5) {
+        std::cout << arg2 << "\n";
+        return true;
+    }
+    return false;
+}
+    
+void swapStrings(std::string& str1, std::string& str2)
+{
+    auto temp = str1;
+    str1 = str2;
+    str2 = str1;
+}
+```
