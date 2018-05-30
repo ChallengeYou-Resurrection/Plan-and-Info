@@ -124,10 +124,10 @@ For example:
 * Functions can be marked as "constexpr" as well. 
     
 ## Pointers <div id = "pointers">
-### Non-Owning <div id = "ptr-nonown>
+### Non-Owning <div id = "ptr-nonown">
 Try to avoid using pointers as they are often completely unnecessary, as in a reference is usually appropriate instead. However, they are often fine as class members.
     
-### Owning <div id = "ptr-own>
+### Owning <div id = "ptr-own">
 For owning pointers, always use smart pointers (`std::unique_ptr` or `std::shared_ptr` depending on the need) and never raw pointers.
     
 ```
