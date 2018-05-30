@@ -19,13 +19,13 @@ The plan for the ChallengeYou Resurrection
     
   Libraries will used to assist in doing this.
   
-#### SFML
+##### SFML
 SFML will be used as a windowing library and for other basic utilities, such as keyboard input, mouse input, and texture loading.
 
-#### OpenGL 
+##### OpenGL 
 OpenGL will be used for the 3D rendering. GLAD will be used to load the OpenGL functions.
 
-#### GLM
+##### GLM
 GLM will be used for the maths relating to OpenGL
   
 ### Lua  <div id = "lang-lua">
