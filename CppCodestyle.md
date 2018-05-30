@@ -63,3 +63,36 @@ void Foo::setID(int newId)
     m_id = newId;
 }
 ```
+
+## Classes <div id = "classes">
+
+```C++
+class Foo
+{
+    public:
+        Foo();
+
+        void foo();
+        void bar();
+
+    protected:
+        void barFoo();
+
+    private:
+        void fooBar();
+
+        int m_number;
+        Object* m_pPointer;
+};
+```
+
+* Public functions and members at top, protected in middle, private at bottom
+* Notice a space between the final class member/function and the next accessor
+
+For initiilzation lists, use a new line like so
+
+```C++
+Foo::Foo(int x, int y)
+:   m_x (x)
+,   m_y (y) { }
+```
