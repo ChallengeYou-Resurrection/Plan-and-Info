@@ -2,7 +2,7 @@
 
 Please follow this code style when contributing to C++ projects 
 
-<div id = "contents">
+
 1. [Naming Conventions](#naming)
   1. [Files and Folders](#files)
   2. [Variables and Constants](#variables)
