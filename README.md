@@ -16,6 +16,17 @@ The plan for the ChallengeYou Resurrection
   
 ### C++  <div id = "lang-cpp">
   C++ will used for the rendering.
+    
+  Libraries will used to assist in doing this.
+  
+#### SFML
+SFML will be used as a windowing library and for other basic utilities, such as keyboard input, mouse input, and texture loading.
+
+#### OpenGL 
+OpenGL will be used for the 3D rendering. GLAD will be used to load the OpenGL functions.
+
+#### GLM
+GLM will be used for the maths relating to OpenGL
   
 ### Lua  <div id = "lang-lua">
   Lua will be used for the game logic.
