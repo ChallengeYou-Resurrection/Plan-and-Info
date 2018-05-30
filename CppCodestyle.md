@@ -35,7 +35,7 @@ Please follow this code style when contributing to C++ projects
 | Function names | `camelCase(int camelCase, int camelAgain)` |
 | Class names    | `PascalCase`                               |
     
-## Functions and Scopes <div id = functions">
+## Functions and Scopes <div id = "functions">
 * Pass primitives by either reference or value
 * Pass object types (>8 bytes) by reference or const reference 
 The indentation style for scopes can be seen here:
