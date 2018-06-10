@@ -35,6 +35,9 @@ GLM will be used for the maths relating to OpenGL
 ## Level Format <div id = "lvl-fmt">
 The original ChallengeYou game format looked something like this:
 ```
-#walls: [[10, 0, 220, 290, [4, 4], 1], [15, 0, 220, 250, [2, 2], 2], [0, 40, 220, 250, [2, 2], 2], [0, 30, 260, 250, [2, 2], 2], [-40, 0, 260, 290, [2, 2], 2], [-15, 0, 260, 250, [2, 2], 2], [0, -40, 260, 290, [4, 4] ..etc
+#walls: [[10, 0, 220, 290, [4, 4], 1], [15, 0, 220, 250, [2, 2],
+    2], [0, 40, 220, 250, [2, 2], 2], [0, 30, 260, 250, [2, 2], 2],
+    [-40, 0, 260, 290, [2, 2], 2], [-15, 0, 260, 250, [2, 2], 2], 
+    [0, -40, 260, 290, [4, 4] ..etc
 ```
 This had some problems such as file size, as quite a lot of the data in this file was unnessary commas, brackets, hashtags, and spaces. So, to overcome this, we decided it would be best to convert the games to a custom binary format, that would not only reduce the file size, but be a lot easier to read and write from/to.
