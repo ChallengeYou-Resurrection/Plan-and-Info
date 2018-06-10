@@ -6,7 +6,7 @@ The plan for the ChallengeYou Resurrection
 2. [Languages](#lang)
     1. [C++](#lang-cpp)
     2. [Lua](#lang-lua)
-3. [Level Format] (#lvl-fmt)
+3. [Level Format](#lvl-fmt)
 
 
 ## Introduction <div id = "intro">
