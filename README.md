@@ -41,3 +41,16 @@ The original ChallengeYou game format looked something like this:
     [0, -40, 260, 290, [4, 4] ..etc
 ```
 This had some problems such as file size, as quite a lot of the data in this file was unnessary commas, brackets, hashtags, and spaces. So, to overcome this, we decided it would be best to convert the games to a custom binary format, that would not only reduce the file size, but be a lot easier to read and write from/to.
+    
+It has the following format:
+
+| Area        | Data             | Notes                                               |
+|-------------|------------------|-----------------------------------------------------|
+| 0x0 to 0xC  | Game creator     |                                                     |
+| 0xD to 0x20 | Game name        |                                                     |
+| 0x21        | Number of Floors | 0 to 20                                             |
+| 0x22        | Music            | 0: Default, 1: Scary, 2: Lounge, 3: Space, 4: Asian |
+| 0x22        | Theme            | 0: Default, 1: Night, 2: Scary                      |
+| 0x23        | Weather          | 0: Default, 1: Rain, 2: Fog, 3: Fog II, 4: Snow     |
+| 0x24 to EOF | Game data        | More info below                                     |
+| EOF         | End of file      | Magic number 0xFFFF                                 |
