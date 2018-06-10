@@ -46,7 +46,7 @@ It has the following format:
 
 | Area        | Data             | Notes                                               |
 |-------------|------------------|-----------------------------------------------------|
-| 0x0 to 0xD  | Game creator     | The header of the binary file has a fixed size of 39 bytes|
+| 0x0 to 0xD  | Game creator     | The header of this file format has a fixed size of 39 bytes|
 | 0xE to 0x23 | Game name        |                                                     |
 | 0x24        | Number of Floors | 0 to 20                                             |
 | 0x25        | Music            | 0: Default, 1: Scary, 2: Lounge, 3: Space, 4: Asian |
