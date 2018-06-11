@@ -46,11 +46,11 @@ It has the following format:
 
 | Area        | Data             | Notes                                               |
 |-------------|------------------|-----------------------------------------------------|
-| 0x0 to 0xD  | Game creator     | The header of this file format has a fixed size of 39 bytes|
-| 0xE to 0x23 | Game name        |                                                     |
-| 0x24        | Number of Floors | 0 to 20                                             |
-| 0x25        | Music            | 0: Default, 1: Scary, 2: Lounge, 3: Space, 4: Asian |
-| 0x26        | Theme            | 0: Default, 1: Night, 2: Scary                      |
-| 0x27        | Weather          | 0: Default, 1: Rain, 2: Fog, 3: Fog II, 4: Snow     |
-| 0x28 to EOF | Game data        | More info below                                     |
+| 0x0 to 0C  | Game creator     | The header of this file format has a fixed size of 38 bytes|
+| 0xD to 0x22 | Game name        |                                                     |
+| 0x23        | Number of Floors | 0 to 20                                             |
+| 0x24        | Music            | 0: Default, 1: Scary, 2: Lounge, 3: Space, 4: Asian |
+| 0x25        | Theme            | 0: Default, 1: Night, 2: Scary                      |
+| 0x26        | Weather          | 0: Default, 1: Rain, 2: Fog, 3: Fog II, 4: Snow     |
+| 0x27 to EOF | Game data        | More info below                                     |
 | EOF         | End of file      | Magic number 0xFFFF                                 |
