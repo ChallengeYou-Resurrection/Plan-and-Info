@@ -44,13 +44,13 @@ This had some problems such as file size, as quite a lot of the data in this fil
     
 It has the following format:
 
-| Area        | Data             | Notes                                               |
-|-------------|------------------|-----------------------------------------------------|
-| 0x0 to 0C  | Game creator     | The header of this file format has a fixed size of 38 bytes|
-| 0xD to 0x22 | Game name        |                                                     |
-| 0x23        | Number of Floors | 0 to 20                                             |
-| 0x24        | Music            | 0: Default, 1: Scary, 2: Lounge, 3: Space, 4: Asian |
-| 0x25        | Theme            | 0: Default, 1: Night, 2: Scary                      |
-| 0x26        | Weather          | 0: Default, 1: Rain, 2: Fog, 3: Fog II, 4: Snow     |
-| 0x27 to EOF | Game data        | More info below                                     |
-| EOF         | End of file      | Magic number 0xFFFF                                 |
+| Area     | Data             | Notes                                               |
+|----------|------------------|-----------------------------------------------------|
+| Sector 1 | Game creator     | 2 to 13 bytes in size (12 + null terminator)        |
+| Sector 2 | Game name        | 2 to 21 bytes in size (20 + null terminator)        |
+| Sector 3 | Number of Floors | 0 to 20                                             |
+| Sector 4 | Music            | 0: Default, 1: Scary, 2: Lounge, 3: Space, 4: Asian |
+| Sector 5 | Theme            | 0: Default, 1: Night, 2: Scary                      |
+| Sector 6 | Weather          | 0: Default, 1: Rain, 2: Fog, 3: Fog II, 4: Snow     |
+| Sector 7 | Game data        | More info below                                     |
+| EOF      | End of file      | Magic number 0xFFFF                                 |
