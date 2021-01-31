@@ -11,7 +11,7 @@ The plan for the ChallengeYou Resurrection
 
 
 ## Introduction <div id = "intro">
-  ChallengeYou Resurrection (CYR) is a fan-made project creaed by people who loved ChallengeYou back in the day (2008-2009 times). The original game over on [ChallengeYou.com](challengeyou.com) does not work anymore on newer systems, and so we want to recreate the game so we can once again experience part of our childhoods.
+  ChallengeYou Resurrection (CYR) is a fan-made project created by people who loved ChallengeYou back in the day (2008-2009 times). The original game over on [ChallengeYou.com](challengeyou.com) does not work anymore on newer systems, and so we want to recreate the game so we can once again experience part of our childhoods.
   
 ## Languages <div id = "lang">
   CYR will be using multiple languages for the different aspects of the game.
